@@ -1,0 +1,244 @@
+/* ! ++++++++++ BASIC ++++++++++ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #fedd00;
+  --second: #ffe54c;
+  --light: #fff4b2;
+  --dark: #484848;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(./assets/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(./assets/Roboto/Roboto-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Regular";
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Bold";
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Bold";
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ! ++++++++++ NAVBAR ++++++++++ */
+
+nav {
+  width: 100vw;
+  height: 7vh;
+  background-color: var(--main);
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ! ++++++++++ HOME ++++++++++ */
+
+.home-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.home-section .all-beers,
+.home-section .random-beer {
+  width: 35rem;
+  height: 35rem;
+  margin: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.home-section .all-beers:hover,
+.home-section .random-beer:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
+}
+
+.home-section img {
+  width: 35rem;
+  height: 30rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.home-section h5 {
+  background-color: var(--main);
+  color: var(--dark);
+  width: 35rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* ! ++++++++++ BEER-COLLECTION ++++++++++ */
+
+.beer-collection {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* ! ++++++++++ BEER-CARDS-GALLERY ++++++++++ */
+
+.beer-cards-gallery {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ! ++++++++++ BEER-CARD ++++++++++ */
+
+.beer-card-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.beer-card {
+  width: 30rem;
+  height: 40rem;
+  margin: 2rem;
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+.beer-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 12px, rgba(0, 0, 0, 0.23) 0px 6px 12px;
+}
+
+.beer-card img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: contain;
+}
+
+/* ! ++++++++++ BEER-DETAILS ++++++++++ */
+
+.beer-details {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.beer-details img {
+  width: 25rem;
+  height: 35rem;
+  margin: 2rem;
+  object-fit: contain;
+}
+
+.beer-details .text-section {
+  max-width: 50rem;
+  text-align: center;
+}
+
+/* ! ++++++++++ BUTTON ++++++++++ */
+
+button {
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  color: var(--dark);
+  background-color: var(--light);
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ! ++++++++++ HOME-BUTTON ++++++++++ */
+/* ! ++++++++++ BACK-BUTTON ++++++++++ */
+
+.home-button,
+.back-button {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border: 1px solid var(--dark);
+  border-radius: 1rem;
+  color: var(--dark);
+  background-color: var(--light);
+  transition: all 0.3s;
+}
+.home-button:hover,
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+.home-button img,
+.back-button img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+}
